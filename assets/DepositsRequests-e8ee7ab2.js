@@ -1,4 +1,4 @@
-import{s as t,j as r,r as d,h as f}from"./index-72da0fa7.js";import{r as s,P as j}from"./index-80bacd76.js";import{T as v}from"./Title-a5526cc6.js";import{S as w}from"./SelectCustom-e1e96b5e.js";import{b as y}from"./date-8a8a165d.js";import"./SelectCustom.styles-fccdbb3e.js";const P=t.div`
+import{s as t,j as e,r as n,h as j}from"./index-023817fd.js";import{r as l,P as v}from"./index-241491a2.js";import"./FilterRequestsWithdraw.styles-107782dc.js";import"./SelectCustom.styles-77d0dd2e.js";import{d as y,s as w,b as P}from"./date-8107bd6c.js";import{T as D}from"./Title-da6732d9.js";import{S as i}from"./SelectCustom-1ad4b9e5.js";const T=t.div`
   table {
     border-spacing: 0;
     width: 100%;
@@ -81,7 +81,7 @@ import{s as t,j as r,r as d,h as f}from"./index-72da0fa7.js";import{r as s,P as 
   gap: 32px;
   flex: 1;
   flex-wrap: wrap;
-`;const T=t.div`
+`;const k=t.div`
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -95,14 +95,13 @@ import{s as t,j as r,r as d,h as f}from"./index-72da0fa7.js";import{r as s,P as 
     margin: 0px;
     padding: 16px 64px 16px 24px;
   }
-`,k=t.div`
+`,H=t.div`
   margin-top: 16px;
   margin-bottom: 32px;
 
-`,D=t.form`
+`,R=t.form`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
   button[type="submit"] {
@@ -124,7 +123,7 @@ import{s as t,j as r,r as d,h as f}from"./index-72da0fa7.js";import{r as s,P as 
     opacity: 0.9;
     transform: var(--transition);
   }
-`,n=t.div`
+`,o=t.div`
   display: flex;
   flex-direction: column;
   max-width: 376px;
@@ -148,4 +147,4 @@ import{s as t,j as r,r as d,h as f}from"./index-72da0fa7.js";import{r as s,P as 
     
   }
 
-`,H=()=>r.jsx(k,{children:r.jsxs(D,{children:[r.jsxs(n,{children:[r.jsx("label",{children:"Search"}),r.jsx("input",{type:"text",placeholder:"Username, account name, bank name, ifsc"})]}),r.jsxs(n,{children:[r.jsx("label",{children:"Date"}),r.jsx(w,{date:y,activeData:"Today"})]})]})}),z=()=>{const[i]=d.useState([]),l=d.useMemo(()=>[{Header:"Player",accessor:"player"},{Header:"TXN by",accessor:"validTurnover"},{Header:"Cash",accessor:"payin_mode"},{Header:"Amount",accessor:"amount"},{Header:"Date",accessor:"date"}],[]),{getTableProps:p,getTableBodyProps:x,headerGroups:c,prepareRow:h,page:g,pageOptions:b,gotoPage:m,state:{pageIndex:u}}=s.useTable({columns:l,data:i,initialState:{pageIndex:0}},s.usePagination);return r.jsxs(P,{children:[r.jsx(v,{title:"Manual Deposit"}),r.jsx(H,{}),r.jsxs("div",{children:[r.jsxs("table",{...p(),children:[r.jsx("thead",{children:c.map(e=>r.jsx("tr",{...e.getHeaderGroupProps(),children:e.headers.map(o=>r.jsx("th",{...o.getHeaderProps(),children:o.render("Header")}))}))}),i.length?r.jsx(r.Fragment,{children:r.jsx("tbody",{...x(),children:g.map((e,o)=>(h(e),r.jsx("tr",{...e.getRowProps(),children:e.cells.map(a=>a.column.Header==="Date"?r.jsx("td",{...a.getCellProps(),children:f(a.value)}):r.jsx("td",{...a.getCellProps(),children:a.render("Cell")}))})))})}):r.jsx("tbody",{children:r.jsx("tr",{children:r.jsx("td",{colSpan:"9",style:{textAlign:"center"},children:"No data found"})})})]}),r.jsxs(T,{children:[r.jsx("div",{className:"total",children:"Total"}),r.jsx("div",{className:"price",children:"$2222"})]}),r.jsx(j,{currentPage:u+1,totalPages:b.length,onPageChange:m})]})]})};export{z as default};
+`,S=()=>e.jsx(H,{children:e.jsxs(R,{children:[e.jsxs(o,{children:[e.jsx("label",{children:"Search"}),e.jsx("input",{type:"text",placeholder:"Username, account name, bank name, ifsc"})]}),e.jsxs(o,{children:[e.jsx("label",{children:"PayIn Mode"}),e.jsx(i,{date:y,activeData:"All"})]}),e.jsxs(o,{children:[e.jsx("label",{children:"Status"}),e.jsx(i,{date:w,activeData:"All"})]}),e.jsxs(o,{children:[e.jsx("label",{children:"Date"}),e.jsx(i,{date:P,activeData:"All"})]}),e.jsxs(o,{className:"btnWrap",children:[e.jsx("button",{type:"submit",children:"Search"}),e.jsx("button",{type:"button",children:"Reset filter "})]})]})}),E=()=>{const[d,C]=n.useState([]),p=n.useMemo(()=>[{Header:"Username",accessor:"name"},{Header:"UTR / TXN Code",accessor:"validTurnover"},{Header:"PayIn mode",accessor:"payin_mode"},{Header:"Amount",accessor:"amount"},{Header:"Status",accessor:"status"},{Header:"Created",accessor:"created"}],[]),{getTableProps:x,getTableBodyProps:c,headerGroups:h,prepareRow:b,page:m,pageOptions:g,gotoPage:u,state:{pageIndex:f}}=l.useTable({columns:p,data:d,initialState:{pageIndex:0}},l.usePagination);return e.jsxs(T,{children:[e.jsx(D,{title:"Deposit Requests"}),e.jsx(S,{}),e.jsxs("div",{children:[e.jsxs("table",{...x(),children:[e.jsx("thead",{children:h.map(r=>e.jsx("tr",{...r.getHeaderGroupProps(),children:r.headers.map(s=>e.jsx("th",{...s.getHeaderProps(),children:s.render("Header")}))}))}),d.length?e.jsx(e.Fragment,{children:e.jsx("tbody",{...c(),children:m.map((r,s)=>(b(r),e.jsx("tr",{...r.getRowProps(),children:r.cells.map(a=>a.column.Header==="Date"?e.jsx("td",{...a.getCellProps(),children:j(a.value)}):e.jsx("td",{...a.getCellProps(),children:a.render("Cell")}))})))})}):e.jsx("tbody",{children:e.jsx("tr",{children:e.jsx("td",{colSpan:"9",style:{textAlign:"center"},children:"No data found"})})})]}),e.jsxs(k,{children:[e.jsx("div",{className:"total",children:"Total"}),e.jsx("div",{className:"price",children:"$2222"})]}),e.jsx(v,{currentPage:f+1,totalPages:g.length,onPageChange:u})]})]})};export{E as default};
