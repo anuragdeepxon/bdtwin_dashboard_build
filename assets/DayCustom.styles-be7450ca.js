@@ -1,4 +1,4 @@
-import{s as e,j as i}from"./index-023817fd.js";const p=e.div`
+import{s as e,j as i}from"./index-53a47b89.js";const p=e.div`
   background-color: var(--color-dark-gray);
   border-radius: 12px;
   max-width: 376px;
