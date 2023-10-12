@@ -1,4 +1,4 @@
-import{s as i,r as n,j as l}from"./index-53a47b89.js";const a=i.h2`
+import{s as i,r as n,j as l}from"./index-fb01a6fd.js";const a=i.h2`
   text-align: ${t=>(t==null?void 0:t.textAlign)||"left"};
   color: ${t=>(t==null?void 0:t.color)||"var(--color-white)"};
   font-size: ${t=>(t==null?void 0:t.fontSize)||"32px"};
